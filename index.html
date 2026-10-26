@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KULTUR | Luxury Streetwear & Culture Collective</title>
+  <meta name="description" content="India's premier high-end D2C streetwear collective. Heavyweight oversized tees, French terry hoodies, and parachute cargos.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. CAPSUL REFERENCE: INFINITE SUBCULTURE MARQUEE TICKER -->
+  <aside class="ticker-bar" aria-label="Announcements">
+    <div class="ticker-track">
+      <span class="ticker-item">⚡ DROP 08: ACID NEON & RAW CONCRETE LIVE NOW</span>
+      <span class="ticker-item">📦 FREE EXPRESS DISPATCH ON PREPAID UPI ORDERS</span>
+      <span class="ticker-item">🔥 380 GSM HEAVYWEIGHT RESTOCK COMPLETE</span>
+      <span class="ticker-item">⚡ 1-CLICK INSTANT GOKWIK & SIMPL CHECKOUT</span>
+      <span class="ticker-item">⚡ DROP 08: ACID NEON & RAW CONCRETE LIVE NOW</span>
+      <span class="ticker-item">📦 FREE EXPRESS DISPATCH ON PREPAID UPI ORDERS</span>
+      <span class="ticker-item">🔥 380 GSM HEAVYWEIGHT RESTOCK COMPLETE</span>
+      <span class="ticker-item">⚡ 1-CLICK INSTANT GOKWIK & SIMPL CHECKOUT</span>
+    </div>
+  </aside>
+
+  <!-- 2. BLUORNG & SNITCH REFERENCE: STICKY EDITORIAL NAVBAR -->
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <a href="#" class="brand-logo">
+        KULTUR<span>.</span>
+      </a>
+
+      <nav class="desktop-nav" id="desktopNav">
+        <a href="#drops" class="nav-link active">All Drops</a>
+        <a href="#tees" class="nav-link">Oversized Tees</a>
+        <a href="#hoodies" class="nav-link">Heavy Hoodies</a>
+        <a href="#cargos" class="nav-link">Parachute Pants</a>
+        <a href="#collabs" class="nav-link">Archives</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="action-btn" id="searchBtn" title="Search Products" aria-label="Search">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+        </button>
+
+        <button class="action-btn" id="wishlistBtn" title="Wishlist" aria-label="Wishlist">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span class="badge-count wishlist-count" id="wishlistCount">0</span>
+        </button>
+
+        <button class="action-btn cart-btn" id="cartToggleBtn" title="Open Bag" aria-label="Shopping Bag">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="badge-count cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. BEWAKOOF REFERENCE: INSTAGRAM STORY CATEGORY PILL SCROLLER -->
+  <section class="category-strip-container">
+    <div class="category-strip" id="categoryFilterStrip">
+      <button class="cat-pill active" data-category="all">
+        <span class="pill-dot"></span> All Drops
+      </button>
+      <button class="cat-pill" data-category="tees">
+        👕 Oversized Tees
+      </button>
+      <button class="cat-pill" data-category="hoodies">
+        🧥 380 GSM Hoodies
+      </button>
+      <button class="cat-pill" data-category="cargos">
+        👖 Parachute Cargos
+      </button>
+      <button class="cat-pill" data-category="knits">
+        🧶 Jacquard Knits
+      </button>
+      <button class="cat-pill" data-category="accessories">
+        🧢 Tactical Gear
+      </button>
+    </div>
+  </section>
+
+  <!-- 4. BLUORNG REFERENCE: BRUTALIST LOOKBOOK HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge-row">
+        <span class="hero-badge">ARCHIVE DROP 08</span>
+        <span class="hero-badge-ghost">EXCLUSIVE EDITION // 200 PIECES</span>
+      </div>
+      <h1 class="hero-title">
+        RAW CONCRETE<br>
+        <span>& ACID NEON</span>
+      </h1>
+      <p class="hero-description">
+        Crafted from custom 340-380 GSM pre-shrunk French Terry and double-ribbed combed cotton. Engineered in Mumbai with an uncompromising oversized silhouette.
+      </p>
+      <div class="hero-cta-group">
+        <a href="#catalog" class="btn-primary">EXPLORE THE DROP &rarr;</a>
+        <a href="#specifications" class="btn-secondary">FABRIC SPECIFICATIONS</a>
+      </div>
+    </div>
+    <div class="hero-specs-float">
+      <div class="spec-tile">
+        <strong>380 GSM</strong>
+        <span>French Terry</span>
+      </div>
+      <div class="spec-tile">
+        <strong>BOXY CUT</strong>
+        <span>Drop Shoulder</span>
+      </div>
+      <div class="spec-tile">
+        <strong>0% SHRINK</strong>
+        <span>Bio-Washed</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. MAIN CATALOG / BONKERS CORNER & SNITCH REFERENCE: HIGH-CONVERSION PRODUCT GRID -->
+  <main class="catalog-section" id="catalog">
+    <div class="section-top-bar">
+      <div>
+        <h2 class="section-title">CURATED STREETWEAR</h2>
+        <p class="section-subtitle">Real-time inventory from today's limited release</p>
+      </div>
+
+      <div class="filter-controls">
+        <span class="product-counter" id="productCounter">Showing 8 of 8 items</span>
+        <select class="sort-select" id="sortSelect" aria-label="Sort catalog">
+          <option value="featured">Featured First</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="rating">Top Customer Rated</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Product Grid dynamically rendered by app.js -->
+    <div class="product-grid" id="productGrid">
+      <!-- Injected via JavaScript -->
+    </div>
+  </main>
+
+  <!-- 6. BLUORNG EDITORIAL LOOKBOOK SHOWCASE -->
+  <section class="editorial-banner" id="specifications">
+    <div class="editorial-grid">
+      <div class="editorial-card text-card">
+        <span class="editorial-tag">TEXTILE OBSESSION</span>
+        <h2>WHY OUR 380 GSM HITS DIFFERENT</h2>
+        <p>
+          Unlike conventional mass-produced fast fashion that deteriorates after 3 washes, every piece in this drop undergoes loopknit high-tension spinning, silicone bath softening, and reactive piece dyeing.
+        </p>
+        <ul class="editorial-list">
+          <li>✔ Heavy gauge 2x2 ribbed collar that never sags</li>
+          <li>✔ High-definition HD puff prints with zero crack guarantee</li>
+          <li>✔ Reinforced double-needle chain stitch seams</li>
+        </ul>
+        <a href="#catalog" class="btn-primary" style="margin-top: 24px; align-self: flex-start;">SHOP HEAVYWEAR</a>
+      </div>
+      <div class="editorial-card image-card-1">
+        <div class="card-caption">LOOKBOOK 01 // OVERSIZED DROP HOODIE</div>
+      </div>
+      <div class="editorial-card image-card-2">
+        <div class="card-caption">LOOKBOOK 02 // PARACHUTE TACTICAL CARGO</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. BONKERS CORNER & CAPSUL REFERENCE: D2C TRUST & CHECKOUT PERKS -->
+  <section class="trust-perks">
+    <div class="perk-box">
+      <div class="perk-icon">⚡</div>
+      <div class="perk-info">
+        <h4>1-Click Instant Checkout</h4>
+        <p>Seamless UPI, Cards & Netbanking with GoKwik & Simpl</p>
+      </div>
+    </div>
+    <div class="perk-box">
+      <div class="perk-icon">🔄</div>
+      <div class="perk-info">
+        <h4>7-Day Free Exchanges</h4>
+        <p>Doorstep reverse pickup across 19,000+ Indian pincodes</p>
+      </div>
+    </div>
+    <div class="perk-box">
+      <div class="perk-icon">💎</div>
+      <div class="perk-info">
+        <h4>100% Streetwear Grade</h4>
+        <p>Pre-shrunk, heavyweight textiles built for daily wear</p>
+      </div>
+    </div>
+    <div class="perk-box">
+      <div class="perk-icon">🚚</div>
+      <div class="perk-info">
+        <h4>24-Hour Dispatch</h4>
+        <p>Tracked delivery right to your door with real-time SMS</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. THE SOULED STORE REFERENCE: SLIDE-OVER CART DRAWER -->
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-drawer-overlay" id="cartOverlay"></div>
+    <div class="cart-drawer-panel">
+      <div class="cart-drawer-header">
+        <div class="cart-header-title">
+          <h3>SHOPPING BAG</h3>
+          <span class="cart-count-badge" id="cartHeaderCount">0 ITEMS</span>
+        </div>
+        <button class="close-drawer-btn" id="cartCloseBtn" aria-label="Close Shopping Bag">&times;</button>
+      </div>
+
+      <!-- FREE SHIPPING PROGRESS BAR -->
+      <div class="shipping-progress-container">
+        <div class="shipping-status-text" id="shippingStatusText">
+          Add <strong>₹1,999</strong> more for <strong>FREE EXPRESS SHIPPING</strong>!
+        </div>
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="shippingProgressFill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <!-- CART ITEMS LIST -->
+      <div class="cart-items-container" id="cartItemsList">
+        <!-- Dynamically injected or empty state -->
+      </div>
+
+      <!-- CART FOOTER -->
+      <div class="cart-drawer-footer" id="cartFooter">
+        <div class="promo-code-box">
+          <input type="text" id="promoInput" placeholder="Try code: STREET20" uppercase>
+          <button id="applyPromoBtn">APPLY</button>
+        </div>
+        <div class="discount-notice" id="discountNotice"></div>
+
+        <div class="cart-summary-lines">
+          <div class="summary-line">
+            <span>Subtotal</span>
+            <span id="cartSubtotal">₹0</span>
+          </div>
+          <div class="summary-line discount-line" id="cartDiscountLine" style="display: none;">
+            <span>Streetwear Discount (20%)</span>
+            <span id="cartDiscountAmount">-₹0</span>
+          </div>
+          <div class="summary-line">
+            <span>Estimated Shipping</span>
+            <span id="cartShipping">₹150</span>
+          </div>
+          <div class="summary-line total-line">
+            <span>Grand Total</span>
+            <span id="cartGrandTotal">₹0</span>
+          </div>
+        </div>
+
+        <button class="btn-checkout-primary" id="startCheckoutBtn">
+          <span>PROCEED TO 1-CLICK CHECKOUT</span>
+          <span id="checkoutBtnTotal">₹0</span>
+        </button>
+        <p class="cart-secure-badge">🔒 Encrypted 256-bit SSL | GoKwik Fast Pay & Simpl</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 9. INSTANT SEARCH MODAL -->
+  <div class="search-modal" id="searchModal" aria-hidden="true">
+    <div class="search-modal-overlay" id="searchOverlay"></div>
+    <div class="search-modal-card">
+      <div class="search-input-wrapper">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+        <input type="text" id="searchInput" placeholder="Search oversized tees, hoodies, cargos, acid wash..." autofocus>
+        <button class="close-search-btn" id="searchCloseBtn">&times;</button>
+      </div>
+      <div class="quick-tags">
+        <span>Popular:</span>
+        <button class="quick-tag" data-tag="Acid Wash">Acid Wash</button>
+        <button class="quick-tag" data-tag="380 GSM">380 GSM</button>
+        <button class="quick-tag" data-tag="Parachute">Parachute</button>
+        <button class="quick-tag" data-tag="Puff Print">Puff Print</button>
+      </div>
+      <div class="search-results-list" id="searchResultsList"></div>
+    </div>
+  </div>
+
+  <!-- 10. PRODUCT QUICK VIEW MODAL -->
+  <div class="quick-view-modal" id="quickViewModal" aria-hidden="true">
+    <div class="qv-overlay" id="qvOverlay"></div>
+    <div class="qv-card" id="qvContent">
+      <!-- Injected by JavaScript -->
+    </div>
+  </div>
+
+  <!-- 11. GOKWIK / SIMPL SIMULATED FAST CHECKOUT MODAL -->
+  <div class="checkout-modal" id="checkoutModal" aria-hidden="true">
+    <div class="checkout-modal-overlay" id="checkoutOverlay"></div>
+    <div class="checkout-modal-card">
+      <div class="checkout-brand-header">
+        <span class="co-brand">⚡ GOKWIK EXPRESS CHECKOUT</span>
+        <button class="close-co-btn" id="closeCheckoutBtn">&times;</button>
+      </div>
+      <div class="checkout-body" id="checkoutBody">
+        <h3>Complete Your Order in 30 Seconds</h3>
+        <p class="co-sub">Enter your mobile number to prefill saved addresses & discounts</p>
+
+        <div class="co-form-group">
+          <label>Mobile Number</label>
+          <div class="phone-input-row">
+            <span class="country-prefix">+91</span>
+            <input type="tel" id="checkoutPhone" placeholder="Enter 10-digit number" value="9876543210" maxlength="10">
+          </div>
+        </div>
+
+        <div class="co-form-group">
+          <label>Delivery Address</label>
+          <input type="text" id="checkoutAddress" placeholder="Flat, Street, Area" value="402, High Street Towers, Bandra West, Mumbai">
+        </div>
+
+        <div class="payment-method-selector">
+          <label class="pay-option active">
+            <input type="radio" name="payMethod" value="UPI" checked>
+            <div>
+              <strong>Instant UPI (GooglePay / PhonePe / Paytm)</strong>
+              <span>⚡ Extra ₹50 Instant Cashback</span>
+            </div>
+          </label>
+          <label class="pay-option">
+            <input type="radio" name="payMethod" value="COD">
+            <div>
+              <strong>Cash on Delivery (COD)</strong>
+              <span>Pay cash or UPI at your doorstep</span>
+            </div>
+          </label>
+          <label class="pay-option">
+            <input type="radio" name="payMethod" value="SIMPL">
+            <div>
+              <strong>Simpl Pay in 3</strong>
+              <span>Split in 3 interest-free payments</span>
+            </div>
+          </label>
+        </div>
+
+        <div class="co-order-review">
+          <div class="co-row">
+            <span>Total Payable:</span>
+            <strong id="coGrandTotal">₹0</strong>
+          </div>
+        </div>
+
+        <button class="btn-confirm-order" id="confirmOrderBtn">PAY & PLACE ORDER ⚡</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- 12. FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <div class="footer-logo">KULTUR<span>.</span></div>
+        <p class="footer-desc">
+          An authentic Indian D2C streetwear project blending references from Bluorng, Snitch, Bonkers Corner, Capsul, Bewakoof, and The Souled Store into a single unified aesthetic collective.
+        </p>
+        <div class="brand-pills">
+          <span>#BluorngLookbook</span>
+          <span>#SnitchUrban</span>
+          <span>#BonkersVibe</span>
+          <span>#CapsulStreet</span>
+          <span>#GoKwik1Click</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Catalog</h4>
+        <ul>
+          <li><a href="#drops">New Drops</a></li>
+          <li><a href="#tees">Oversized T-Shirts</a></li>
+          <li><a href="#hoodies">French Terry Hoodies</a></li>
+          <li><a href="#cargos">Parachute Cargos</a></li>
+          <li><a href="#collabs">Limited Archive</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#shipping">Track Order (Shiprocket)</a></li>
+          <li><a href="#returns">7-Day Free Exchange</a></li>
+          <li><a href="#size">Size & Fit Guide</a></li>
+          <li><a href="#contact">WhatsApp Concierge</a></li>
+          <li><a href="#privacy">Privacy & Terms</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col newsletter-col">
+        <h4>Join The Inner Circle</h4>
+        <p>Get early SMS access to drops 30 minutes before Instagram launch.</p>
+        <form class="footer-newsletter" id="newsletterForm" onsubmit="event.preventDefault(); window.showToast('Subscribed to drop alerts!');">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">JOIN</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div>&copy; 2026 KULTUR COLLECTIVE. All Rights Reserved.</div>
+      <div class="footer-payment-icons">
+        <span>UPI</span>
+        <span>VISA</span>
+        <span>MASTERCARD</span>
+        <span>GOKWIK</span>
+        <span>SIMPL</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

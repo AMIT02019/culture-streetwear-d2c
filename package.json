@@ -1,0 +1,23 @@
+{
+  "name": "culture-streetwear-d2c",
+  "version": "1.0.0",
+  "description": "High-converting Indian D2C Streetwear Storefront synthesising references from Bluorng, Snitch, Bonkers Corner, Capsul, Bewakoof, and The Souled Store.",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "streetwear",
+    "ecommerce",
+    "d2c",
+    "fashion",
+    "bluorng",
+    "snitch",
+    "bonkers-corner",
+    "capsul",
+    "bewakoof",
+    "souled-store",
+    "vercel"
+  ],
+  "author": "AMIT02019",
+  "license": "MIT"
+}
