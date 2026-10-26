@@ -2,6 +2,9 @@
 
 > A production-grade, high-converting Indian D2C streetwear storefront engineered by analyzing and synthesizing design patterns, conversion triggers, and architecture from India's top 6 streetwear brands: **Bluorng, Snitch, Bonkers Corner, Capsul, Bewakoof, and The Souled Store**.
 
+🌐 **Live Demo on Vercel:** [https://culture-streetwear-d2c.vercel.app](https://culture-streetwear-d2c.vercel.app)  
+📦 **GitHub Repository:** [https://github.com/AMIT02019/culture-streetwear-d2c](https://github.com/AMIT02019/culture-streetwear-d2c)
+
 ---
 
 ## 🎨 Architectural & Design References from Each Brand
