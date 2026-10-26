@@ -145,6 +145,7 @@ const PRODUCTS = [
 
 // 2. STATE MANAGEMENT
 let state = {
+  theme: localStorage.getItem('kultur_theme') || 'light',
   cart: JSON.parse(localStorage.getItem('kultur_cart') || '[]'),
   wishlist: JSON.parse(localStorage.getItem('kultur_wishlist') || '[]'),
   currentCategory: 'all',
@@ -155,11 +156,40 @@ let state = {
 
 // 3. INITIALIZATION
 document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
   renderProducts();
   setupEventListeners();
   updateCartUI();
   updateWishlistUI();
 });
+
+// THEME ENGINE (BRIGHT DEFAULT)
+function initTheme() {
+  document.documentElement.setAttribute('data-theme', state.theme);
+  updateThemeIcon();
+}
+
+function toggleTheme() {
+  state.theme = state.theme === 'light' ? 'dark' : 'light';
+  localStorage.setItem('kultur_theme', state.theme);
+  document.documentElement.setAttribute('data-theme', state.theme);
+  updateThemeIcon();
+  showToast(state.theme === 'light' ? 'Bright Streetwear Theme Activated ☀️' : 'Dark Mode Activated 🌙');
+}
+
+function updateThemeIcon() {
+  const btn = document.getElementById('themeToggleBtn');
+  if (!btn) return;
+  if (state.theme === 'dark') {
+    // Show Sun icon to switch to light
+    btn.innerHTML = `<svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`;
+    btn.title = "Switch to Bright Theme";
+  } else {
+    // Show Moon icon to switch to dark
+    btn.innerHTML = `<svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
+    btn.title = "Switch to Dark Mode";
+  }
+}
 
 // 4. RENDER PRODUCTS
 function renderProducts() {
@@ -244,6 +274,12 @@ function renderProducts() {
 
 // 5. EVENT LISTENERS
 function setupEventListeners() {
+  // Theme Toggle (Bright / Dark)
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', toggleTheme);
+  }
+
   // Category Pill Scroller (Bewakoof style)
   const strip = document.getElementById('categoryFilterStrip');
   if (strip) {
